@@ -1,0 +1,11 @@
+ufn=input(str("enter file name :\n"))
+ufn= "file/"+ ufn +".txt"
+print(ufn)
+file1=open(ufn,'r')
+file2=open('file/copiedfile.txt','w')
+file2.write(file1.read())
+file1.close()
+file2.close()
+print("contents of copied file : \n")
+file2=open('file/copiedfile.txt','r')
+print(file2.read())

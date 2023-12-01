@@ -1,0 +1,6 @@
+f=open('file/pytst.txt','a')
+f.write("hi me ")
+f.close()
+f=open('file/pytst.txt','r')
+b=f.read()
+print(b)
